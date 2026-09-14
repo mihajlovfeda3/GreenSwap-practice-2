@@ -1,0 +1,5 @@
+[
+  {"id": 1, "name": "Монстера", "category": "indoor", "available": true},
+  {"id": 2, "name": "Базилик", "category": "seeds", "available": true},
+  {"id": 3, "name": "Фикус", "category": "indoor", "available": false}
+]
