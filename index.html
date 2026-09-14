@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GreenSwap — обмен растениями</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <header>
+      <p class="eyebrow">Учебный прототип</p>
+      <h1>GreenSwap</h1>
+      <p>Найдите растение для обмена в своём городе.</p>
+    </header>
+
+    <label for="type-filter">Тип растения</label>
+    <select id="type-filter">
+      <option value="all">Все предложения</option>
+      <option value="indoor">Комнатные растения</option>
+      <option value="seeds">Семена</option>
+    </select>
+
+    <section id="plant-list" class="cards" aria-live="polite"></section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

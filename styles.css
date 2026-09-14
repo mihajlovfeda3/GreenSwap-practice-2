@@ -1,0 +1,13 @@
+:root {
+  font-family: Arial, sans-serif;
+  color: #18352a;
+  background: #eef5ef;
+}
+
+body { margin: 0; }
+.page { width: min(920px, 90%); margin: 48px auto; }
+.eyebrow { color: #3b7358; font-weight: 700; text-transform: uppercase; }
+select { padding: 10px 12px; margin: 8px 0 24px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+.card { padding: 20px; border-radius: 14px; background: white; box-shadow: 0 6px 20px #214b3720; }
+.status { color: #3b7358; font-weight: 700; }
