@@ -11,9 +11,12 @@ function render(selectedType = "all") {
   const visible = plants.filter(({ type }) => selectedType === "all" || type === selectedType);
   list.innerHTML = visible.map(({ name, owner, status }) => `
     <article class="card">
-      <h2>${name}</h2>
-      <p>Владелец: ${owner}</p>
-      <p class="status">${status}</p>
+      <div class="card-topline">
+        <span class="plant-icon" aria-hidden="true">${name.slice(0, 1)}</span>
+        <span class="status ${status === "Доступно" ? "available" : "reserved"}">${status}</span>
+      </div>
+      <h3>${name}</h3>
+      <p class="owner"><span aria-hidden="true">${owner.slice(0, 1)}</span>Владелец: ${owner}</p>
     </article>
   `).join("");
 }

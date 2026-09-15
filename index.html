@@ -8,20 +8,36 @@
 </head>
 <body>
   <main class="page">
-    <header>
-      <p class="eyebrow">Учебный прототип</p>
-      <h1>GreenSwap</h1>
-      <p>Найдите растение для обмена в своём городе.</p>
+    <header class="hero">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">G</span>
+        <div>
+          <h1>GreenSwap</h1>
+          <p>Обмен растениями и семенами рядом с вами</p>
+        </div>
+      </div>
+      <span class="offer-count">3 предложения</span>
     </header>
 
-    <label for="type-filter">Тип растения</label>
-    <select id="type-filter">
-      <option value="all">Все предложения</option>
-      <option value="indoor">Комнатные растения</option>
-      <option value="seeds">Семена</option>
-    </select>
+    <section class="catalog" aria-labelledby="catalog-title">
+      <div class="catalog-heading">
+        <div>
+          <h2 id="catalog-title">Каталог предложений</h2>
+          <p>Выберите категорию, чтобы быстрее найти подходящий вариант.</p>
+        </div>
 
-    <section id="plant-list" class="cards" aria-live="polite"></section>
+        <div class="filter-control">
+          <label for="type-filter">Тип растения</label>
+          <select id="type-filter">
+            <option value="all">Все предложения</option>
+            <option value="indoor">Комнатные растения</option>
+            <option value="seeds">Семена</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="plant-list" class="cards" aria-live="polite"></div>
+    </section>
   </main>
   <script src="app.js"></script>
 </body>
