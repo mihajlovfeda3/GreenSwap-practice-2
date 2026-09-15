@@ -12,11 +12,10 @@ function render(selectedType = "all") {
   list.innerHTML = visible.map(({ name, owner, status }) => `
     <article class="card">
       <div class="card-topline">
-        <span class="plant-icon" aria-hidden="true">${name.slice(0, 1)}</span>
         <span class="status ${status === "Доступно" ? "available" : "reserved"}">${status}</span>
       </div>
       <h3>${name}</h3>
-      <p class="owner"><span aria-hidden="true">${owner.slice(0, 1)}</span>Владелец: ${owner}</p>
+      <p class="owner">Владелец: <strong>${owner}</strong></p>
     </article>
   `).join("");
 }
