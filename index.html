@@ -8,19 +8,28 @@
 </head>
 <body>
   <main class="page">
-    <header class="hero">
-      <div class="brand">
-        <h1>GreenSwap</h1>
-        <p>Обмен растениями и семенами рядом с вами</p>
-      </div>
-      <span class="offer-count">Сейчас доступно: 3 предложения</span>
+    <header class="topbar">
+      <a class="wordmark" href="#">GreenSwap</a>
+      <p>Обмен растениями и семенами</p>
+      <a class="catalog-link" href="#catalog-title">Смотреть каталог ↓</a>
     </header>
+
+    <section class="hero" aria-label="GreenSwap — обмен растениями рядом">
+      <p class="hero-note">[ растения меняются хозяевами ]</p>
+      <h1>greenswap</h1>
+      <figure class="hero-media">
+        <img
+          src="https://images.unsplash.com/photo-1604512232589-b7640441ed1f?auto=format&amp;fit=crop&amp;q=86&amp;w=1800"
+          alt="Крупный зелёный лист монстеры на светлом фоне"
+        >
+      </figure>
+    </section>
 
     <section class="catalog" aria-labelledby="catalog-title">
       <div class="catalog-heading">
         <div>
           <h2 id="catalog-title">Каталог предложений</h2>
-          <p>Выберите категорию, чтобы быстрее найти подходящий вариант.</p>
+          <p>Растения и семена, которыми готовы поделиться рядом с вами.</p>
         </div>
 
         <div class="filter-control">
@@ -34,6 +43,7 @@
       </div>
 
       <div id="plant-list" class="cards" aria-live="polite"></div>
+      <p class="offer-count">Сейчас доступно: 3 предложения</p>
     </section>
   </main>
   <script src="app.js"></script>
